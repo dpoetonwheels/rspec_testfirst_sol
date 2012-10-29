@@ -7,15 +7,11 @@ def subtract (input_1, input_2)
 end
 
 def sum(input_array)
-  sum = 0
-  input_array.collect {|x| sum+= x}
-  sum
+  input_array.inject(0) {|result, x| result += x}
 end
 
 def multiply(*args)
-  mul = 1
-  args.collect {|x| mul*= x }
-  mul
+  args.inject(1) {|result, x| result *= x}
 end
 
 def factorial(n)
