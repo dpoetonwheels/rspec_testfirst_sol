@@ -1,4 +1,4 @@
-require "silly_blocks"
+require File.dirname(__FILE__)+"/solution/silly_blocks"
 
 describe "some silly block functions" do
 
